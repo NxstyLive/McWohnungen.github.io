@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #A49789; /* Erdige Braun-Grau-Töne */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #7C6E58; /* Dunkleres Braun */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.wohnung {
+    border-bottom: 1px solid #5D5A4A; /* Dunkleres Grau */
+    padding: 10px 0;
+    color: #E0E0D1; /* Helles Beige */
+}
+
+.wohnung:last-child {
+    border-bottom: none;
+}
+
+h1, h2 {
+    color: #000000; /* Schwarzer Text statt Grün */
+}
+
+p {
+    color: #D1C7B7; /* Sanfter Beige-Ton */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 3px solid #5D5A4A; /* Dunkler Rahmen für Bilder */
+}

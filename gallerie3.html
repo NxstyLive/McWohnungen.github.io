@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildergalerie</title>
+    <link rel="stylesheet" href="galleriestyle1.css"> <!-- Verlinkung zur CSS-Datei -->
+</head>
+<body>
+
+  <div class="gallery-container">
+    <!-- Bild 1 mit Beschreibung -->
+    <div class="gallery-image active">
+      <img src="https://i.postimg.cc/C16ZLHry/Bild-2.png" alt="Bild 1">
+      <p class="description">Gemütlich in Rot</p>
+    </div>
+
+    <!-- Bild 2 mit Beschreibung -->
+    <div class="gallery-image">
+      <img src="https://i.postimg.cc/Gt84B864/Bild-3.png" alt="Bild 2">
+      <p class="description">Ein schönes Beerenfeld mit dran</p>
+    </div>
+
+    <!-- Bild 3 mit Beschreibung -->
+    <div class="gallery-image">
+      <img src="https://i.postimg.cc/RhkNwCzX/Bild-4.png" alt="Bild 3">
+      <p class="description">Sicherer Tunnel vor Mobs bis vor die Tür</p>
+    </div>
+
+    <!-- Pfeile für die Navigation -->
+    <span class="arrow arrow-left" onclick="changeImage(-1)">&#10094;</span>
+    <span class="arrow arrow-right" onclick="changeImage(1)">&#10095;</span>
+
+    <!-- Link zurück zur Index-Seite -->
+    <div class="back-link">
+      <a href="index.html" class="back-button">Zurück zur Startseite</a>
+    </div>
+  </div>
+
+  <!-- Externes Skript einbinden -->
+  <script src="swipe.js"></script>
+
+</body>
+</html>

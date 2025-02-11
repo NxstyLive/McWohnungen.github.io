@@ -4,16 +4,21 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #A49789; /* Erdige Braun-Grau-Töne */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Container für die Galerie */
 .gallery-container {
     max-width: 800px;
-    margin: 0 auto;
     background: #7C6E58; /* Dunkleres Braun */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    position: relative;
 }
 
 /* Bildanzeige */
@@ -21,7 +26,7 @@ body {
     width: 100%;
     display: none;
     border-radius: 5px;
-    border: 3px solid #5D5A4A; /* Dunkler Rahmen für Bilder */
+    border: 3px solid #5D5A4A;
 }
 
 /* Aktives Bild sichtbar machen */
@@ -29,19 +34,19 @@ body {
     display: block;
 }
 
-/* Bilder an die Containergröße anpassen, ohne das Bild zu verzerren */
+/* Bilder an die Containergröße anpassen */
 .gallery-image img {
-    width: 100%; /* Bild nimmt 100% der Containerbreite ein */
-    height: auto; /* Höhe wird automatisch angepasst, um Verzerrungen zu vermeiden */
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    border: 3px solid #5D5A4A; /* Dunkler Rahmen für Bilder */
+    border: 3px solid #5D5A4A;
 }
 
 /* Beschreibung der Bilder */
 .description {
     margin-top: 10px;
     font-size: 1.1rem;
-    color: #D1C7B7; /* Sanfter Beige-Ton */
+    color: #D1C7B7;
 }
 
 /* Pfeile für die Navigation */
@@ -64,22 +69,63 @@ body {
     right: 10px;
 }
 
-/* Styling für den Zurück-Link */
-.back-link {
+/* Styling für den Navigationsbereich */
+.navigation-links {
     margin-top: 20px;
-    text-align: center; /* Link mittig ausrichten */
+    text-align: center;
 }
 
-.back-button {
+/* Button-Styling */
+.nav-button {
     font-size: 1.2rem;
-    color: white; /* Helles Weiß */
-    text-decoration: none; /* Ohne Unterstreichung */
+    color: white; /* Schriftfarbe immer weiß */
+    text-decoration: none;
     padding: 10px 20px;
-    background-color: #5D5A4A; /* Dunkleres Braun */
+    background-color: #5D5A4A; /* Hintergrundfarbe des Buttons */
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
 }
 
-.back-button:hover {
-    background-color: #3E3B2E; /* Dunklerer Ton für Hover-Effekt */
+/* Hover für "Zurück zur Startseite" */
+.nav-button:hover {
+    background-color: #3E3B2E; /* Hintergrundfarbe beim Hover */
+}
+
+/* Styling für den separaten "Vermieter kontaktieren"-Button */
+.contact-container {
+    text-align: center;
+    margin-top: 50px; /* Etwas Abstand nach unten */
+}
+
+/* Button-Styling für "Vermieter kontaktieren" */
+.contact-button {
+    background-color: #8B6F47;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white; /* Schriftfarbe immer weiß */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+/* Hover für "Vermieter kontaktieren" - jetzt grün */
+.contact-button:hover {
+    background-color: #4CAF50; /* Grüner Farbton beim Hover */
+}
+
+/* Hyperlinks anpassen */
+a {
+    color: white; /* Schriftfarbe immer weiß */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+a:hover {
+    color: white; /* Farbe bleibt weiß beim Hover */
+    text-decoration: underline; /* Optional: Wenn du eine Unterstreichung beim Hover möchtest */
 }

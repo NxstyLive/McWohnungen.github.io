@@ -118,3 +118,14 @@ body {
 .contact-button:hover {
     background-color: #4CAF50; /* Grüner Farbton */
 }
+
+/* Hyperlinks anpassen */
+a {
+    color: #D1C7B7; /* Wähle eine Farbe für den Text, z.B. ein helles Grau */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+a:hover {
+    color: #5D5A4A; /* Farbe beim Hover-Effekt */
+    text-decoration: underline; /* Optional: Wenn du eine Unterstreichung beim Hover möchtest */
+}

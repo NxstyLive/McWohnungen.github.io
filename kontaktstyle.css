@@ -1,0 +1,107 @@
+/* Allgemeine Gestaltung der Kontaktseite */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #A49789; /* Erdige Braun-Grau-Töne */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container für den Kontaktbereich */
+.contact-container {
+    max-width: 800px;
+    background: #7C6E58; /* Dunkleres Braun */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Überschrift für den Kontaktbereich */
+.contact-container h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Beschreibung des Kontaktbereichs */
+.contact-container p {
+    font-size: 1.1rem;
+    color: #D1C7B7;
+    margin-bottom: 40px;
+}
+
+/* Kontaktformular */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Größerer Abstand zwischen den Feldern */
+    max-width: 600px; /* Maximale Breite des Formulars */
+    margin: 0 auto; /* Zentriert das Formular */
+}
+
+/* Beschriftungen der Formularfelder */
+.contact-form label {
+    font-size: 1.1rem; /* Etwas größere Schriftgröße */
+    color: #D1C7B7;
+    text-align: left;
+}
+
+/* Eingabefelder und Textarea */
+.contact-form input, .contact-form textarea {
+    padding: 12px; /* Größere Polsterung */
+    font-size: 1.1rem; /* Etwas größere Schriftgröße */
+    border-radius: 5px;
+    border: 1px solid #5D5A4A;
+    width: 100%;
+    box-sizing: border-box; /* Stellt sicher, dass die Größe die Polsterung einschließt */
+}
+
+/* Größe der Textarea erhöhen */
+.contact-form textarea {
+    min-height: 150px; /* Höhere Textarea */
+}
+
+/* Stil des Absende-Buttons */
+.contact-form button {
+    padding: 12px 20px; /* Größere Polsterung */
+    background-color: #5D5A4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #3E3B2E; /* Hover-Effekt */
+}
+
+/* Styling für die "Zurück zur Galerie"-Schaltfläche */
+.navigation-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-button {
+    font-size: 1.2rem;
+    color: white; /* Schriftfarbe immer weiß */
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #5D5A4A;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #3E3B2E;
+}

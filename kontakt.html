@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontaktstyle.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Kontaktieren Sie uns</h1>
+        <form id="contact-form" onsubmit="sendEmail(event)" method="POST" class="contact-form">
+            <label for="name">Ihr Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Ihr Name">
+
+            <label for="email">Ihre E-Mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Ihre E-Mail-Adresse">
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Ihre Nachricht"></textarea>
+
+            <button type="submit" class="submit-button">Nachricht senden</button>
+        </form>
+        <div class="navigation-links">
+            <a href="index.html" class="nav-button">Zurück zur Hauptseite</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("RMK-CAqgOnHExlrIj"); // Füge hier deine user ID ein
+      })();
+
+      function sendEmail(event) {
+        event.preventDefault(); // Verhindert das automatische Neuladen der Seite
+
+        var form = document.getElementById('contact-form');
+        emailjs.sendForm('service_cgcqsk8', 'template_1sdirwv', form)
+          .then(function(response) {
+            alert('Vielen Dank! Ihre Nachricht wurde gesendet.');
+            
+            // Formular zurücksetzen (Felder leeren)
+            form.reset();
+
+            // Seite nach einer kurzen Zeit neu laden
+            setTimeout(function() {
+              location.reload(); // Neu lädt die Seite
+            }, 2000); // Warte 2 Sekunden, bevor die Seite neu geladen wird
+          }, function(error) {
+            alert('Es gab ein Problem beim Senden Ihrer Nachricht.');
+          });
+      }
+    </script>
+</body>
+</html>

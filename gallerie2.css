@@ -64,22 +64,52 @@ body {
     right: 10px;
 }
 
-/* Styling für den Zurück-Link */
-.back-link {
+/* Styling für den Navigationsbereich */
+.navigation-links {
     margin-top: 20px;
-    text-align: center; /* Link mittig ausrichten */
+    text-align: center;
 }
 
-.back-button {
+/* Button-Styling */
+.nav-button {
     font-size: 1.2rem;
-    color: white; /* Helles Weiß */
-    text-decoration: none; /* Ohne Unterstreichung */
+    color: white;
+    text-decoration: none;
     padding: 10px 20px;
-    background-color: #5D5A4A; /* Dunkleres Braun */
+    background-color: #5D5A4A;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
 }
 
-.back-button:hover {
-    background-color: #3E3B2E; /* Dunklerer Ton für Hover-Effekt */
+/* Hover für "Zurück zur Startseite" */
+.nav-button:hover {
+    background-color: #3E3B2E;
+}
+
+/* Styling für den separaten "Vermieter kontaktieren"-Button */
+.contact-container {
+    text-align: center;
+    margin-top: 50px; /* Etwas Abstand nach unten */
+}
+
+/* Button-Styling für "Vermieter kontaktieren" */
+.contact-button {
+    background-color: #8B6F47;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+/* Hover für "Vermieter kontaktieren" - jetzt grün */
+.contact-button:hover {
+    background-color: #4CAF50; /* Grüner Farbton */
 }
